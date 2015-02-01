@@ -1,0 +1,12 @@
+<template name="home">
+  <div id="input">
+    <input type="text" id="url">
+    <input type="text" id="description">
+    <button id="add">Add</button>
+  </div>
+  <div id="output">
+    {{#each urls}}
+      {{>urlItem}}
+    {{/each}}
+  </div>
+</template>
